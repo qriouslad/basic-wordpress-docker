@@ -1,7 +1,7 @@
 # Basic, local WordPress app on Docker
 
 This is a very basic docker compose configuration to set up a WordPress app on Docker locally.
-Sources: [Docker Docs](https://docs.docker.com/compose/wordpress/#define-the-project) and [docker tutorial by @tatemz](https://medium.com/@tatemz/local-wordpress-development-with-docker-3-easy-steps-a7c375366b9).
+Sources: 
 
 ## Getting your first WordPress app running on Docker
 
@@ -17,3 +17,7 @@ Sources: [Docker Docs](https://docs.docker.com/compose/wordpress/#define-the-pro
 ## Shutdown and clean up
 
 `docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress database.
+
+### Sources
+
+This simple configuration is a combination of and slight modification from the config file found in [Docker Docs](https://docs.docker.com/compose/wordpress/#define-the-project) and [docker tutorial by @tatemz](https://medium.com/@tatemz/local-wordpress-development-with-docker-3-easy-steps-a7c375366b9).
