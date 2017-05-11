@@ -1,7 +1,6 @@
 # Basic, local WordPress app on Docker
 
 This is a very basic docker compose configuration to set up a WordPress app on Docker locally.
-Sources: 
 
 ## Getting your first WordPress app running on Docker
 
