@@ -18,6 +18,8 @@ services:
     - ./:/var/www/html
     ports:
       - "8000:80"
+    extra_hosts:
+      - "127.0.0.1:docker.dev"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
