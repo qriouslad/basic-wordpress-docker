@@ -23,5 +23,7 @@ This simple configuration is based on [an official Docker documentation](https:/
 
 ## References
 
-[Docker CLI documentation for `docker-compose up`](https://docs.docker.com/compose/reference/up/)
-[Docker CLI documentation for `docker-compose down`](https://docs.docker.com/compose/reference/down/)
+Docker CLI documentation for:
+
+- `docker-compose up`: https://docs.docker.com/compose/reference/up/ 
+- `docker-compose down`: https://docs.docker.com/compose/reference/down/
