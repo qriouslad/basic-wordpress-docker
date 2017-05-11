@@ -4,7 +4,7 @@ This is a very basic docker compose configuration to set up a WordPress app on D
 
 ## Getting your first WordPress app running on Docker
 
-1. Install [Docker Community Edition](https://www.docker.com/community-edition) on your computer.
+1. Install [Docker Community Edition](https://www.docker.com/community-edition) on your computer. Make sure you've enabled the local drive for your project in Docker settings.
 2. Create your WordPress project directory, enter that directory and open terminal there
 3. Clone this repo into that directory with `git clone https://github.com/qriouslad/basic-wordpress-docker.git .` (include a dot at the end there)
 4. Run `docker compose up -d`
@@ -15,7 +15,7 @@ This is a very basic docker compose configuration to set up a WordPress app on D
 
 ## Shutdown and clean up
 
-`docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress database.
+`docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress volume. It will not delete the WordPress files and folders in your project directory.
 
 ### Sources
 
