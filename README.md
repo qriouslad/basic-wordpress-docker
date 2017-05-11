@@ -1,6 +1,6 @@
 # Basic, local WordPress app on Docker
 
-This is a very basic docker compose configuration to set up a WordPress app on Docker locally.
+This is a very basic docker compose configuration to set up a WordPress app on Docker locally. You'll get latest WordPress with Apache 2.4, PHP 5.6 and MySql 5.7.
 
 ## Getting your first WordPress app running on Docker
 
