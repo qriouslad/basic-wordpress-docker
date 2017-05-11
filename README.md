@@ -13,3 +13,7 @@ Sources: [Docker Docs](https://docs.docker.com/compose/wordpress/#define-the-pro
 6. Wait for a couple of minutes for Docker to finish initializing the containers for the database and WordPress.
 7. Visit the WordPress app at `localhost:8000` and complete the 5-minutes install
 8. Congrats. Your first, local WordPress installation in Docker. :-)
+
+## Shutdown and clean up
+
+`docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress database.
