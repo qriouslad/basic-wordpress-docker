@@ -7,15 +7,15 @@ This is a very basic docker compose configuration to set up a WordPress app on D
 1. Install [Docker Community Edition](https://www.docker.com/community-edition) on your computer. Make sure you've enabled the local drive for your project in Docker settings.
 2. Create your WordPress project directory, enter that directory and open terminal there
 3. Clone this repo into that directory with `git clone https://github.com/qriouslad/basic-wordpress-docker.git .` (include a dot at the end there)
-4. Run `docker compose up -d`
-5. You should see `database` directory in your project folder, and then all the WordPress folders created there as well
-6. Wait for a couple of minutes for Docker to finish initializing the containers for the database and WordPress.
+4. Run `docker compose up` and see how Docker pulls the `mysql` and `wordpress` images fron the online [Docker Hub](https://hub.docker.com/) and builds your WordPress app locally.
+5. You should see all the WordPress folders created in your project folder.
+6. Wait for a couple of minutes for Docker to finish initializing the containers for the database and WordPress. You should see the `wordpress` container running at the end of the `docker compose up` process in step 4.
 7. Visit the WordPress app in your browser at `localhost:8000` and complete the 5-minutes install
 8. Congrats. Your first, local WordPress installation in Docker. :-)
 
 ## Shutdown and clean up
 
-`docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress volume. It will not delete the WordPress files and folders in your project directory.
+`docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress volume. It will not delete the WordPress files and folders in your project directory. If you want to start over, simply delete all the WordPress files and folders and repeat from step 3.
 
 ### Sources
 
