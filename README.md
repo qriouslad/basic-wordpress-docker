@@ -17,6 +17,10 @@ This is a very basic `docker-compose` configuration to set up a WordPress app on
 
 `docker-compose down` will remove the containers and default network, but preserve your wordpress database. `docker-compose down --volumes` will remove the containers, default network, and the wordpress volume. It will not delete the WordPress files and folders in your project directory. If you want to start over, simply delete all the WordPress files and folders and repeat from step 3.
 
+## Next step
+
+Now that you've understood the basics of getting a WordPress app running locally in Docker, go and try [wp-docker](https://github.com/10up/wp-docker) to get a proper local development environment for WordPress in Docker.
+
 ## References
 
 Docker CLI documentation for:
